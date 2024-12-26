@@ -11,6 +11,14 @@ jobs:
           echo "multi-line"
           ls -lrta
           cat README.md
+      - name: installing cowsay
+        run: sudo apt-get install cowsay -y
       - name: cowsay
         run: cowsay -f dragon "I am dragon" >> dragon.txt
+      - name: check file
+        run: grep -i "dragon" dragon.txt
+      - name: display
+        run: cat dragon.txt
+      - name: list 
+        run: ls -lrta
         
