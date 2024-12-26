@@ -4,6 +4,8 @@ jobs:
   shell:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
       - name: shell
         run: |
           chmod +x shell.sh
