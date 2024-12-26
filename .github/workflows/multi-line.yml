@@ -1,0 +1,16 @@
+name: multi-line
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout 
+        uses: actions/checkout@v4
+      - name: echo list read
+        run: |
+          echo "multi-line"
+          ls -lrta
+          cat README.md
+      - name: cowsay
+        run: cowsay -f dragon "I am dragon" >> dragon.txt
+        
