@@ -1,0 +1,11 @@
+name: shell
+on: push
+jobs:
+  shell:
+    runs-on: ubuntu-latest
+    steps:
+      - name: shell
+        run: |
+          chmod +x shell.sh
+          ./shell.sh
+       
