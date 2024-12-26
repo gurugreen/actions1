@@ -1,0 +1,12 @@
+name: first-example
+on: push
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo
+              run: echo "first-example"
+            - name: list
+              run: ls
+            - name: read
+              run: cat README.md
